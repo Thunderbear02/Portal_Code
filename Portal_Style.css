@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+/*Generalt body styling*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("Montserrat/static/Montserrat-Bold.ttf")format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	/* Background image */
+	background-image: url("Portal_wall_background.jpg"); /* Bruger mit valgte billede */
+	background-size: cover; /* Fylder hele siden */
+	background-position: center; /* Billede i midten */
+	background-repeat: no-repeat; /* Billedet går ikke igen */
+	height: 100vh; /* Dækker den fulde viewport height */
+}
+
+/* Menu bar styling */
+.menu-bar {
+	position: fixed; /* bliver i toppen */
+	top: 20px; /* Tilføjer space i toppen */
+	left: 15px; /* Tilføjer space fra venstre side */
+	right: 15px; /* Tilføjer space fra højre side */
+	width: calc(100% - 30px); /* Tager højde for venstre og højre spacing */
+	background: rgba(233, 233, 233, 0.75); /* hvid med 75% gennemsigtighed */
+	border-radius: 10px; /* chamfer effect på alle kanter */
+	z-index: 1000; /* sikrer at den bliver på toppen af andre content */
+	padding: 10px 0; /* tilføjer spacing inde i menu baren */
+	display: flex;
+	align-content: center;
+}
+
+/* Stil til menu-logoet */
+.menu-logo {
+    width: 50px; /* Juster størrelsen på logoet */
+    height: auto; /* Bevar billedets proportioner */
+    margin-right: 30px; /* Tilføj mellemrum mellem logoet og teksten */
+	margin-left: 15px; /*Tilføjer mellem mellem logoet og venstre kant af menuen*/
+    vertical-align: middle; /* Juster lodret centrering med teksten */
+}
+
+	
+/* Navigation styling */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex; /* viser items i en række */
+	gap: 50px; /* tilføjer space */
+	align-items: center; /*sikrer lodret centrering af listeelementer*/
+}
+	
+nav ul li {
+	display: flex;
+	align-items: center; /*centrerer indholdet lodret*/
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #1D1D1D;
+	font-family: 'Montserrat', sans-serif; /* Brug Montserrat-skrifttypen */
+	font-weight: bold; /* Bold skrift */
+	font-size: 36px;
+	transition: color 0.3s ease; /* smooth transition */
+}
+
+nav ul li a:hover {
+	color: #767676; /* highlighter farven, når man hover over */
+}
+
+/* Content styling */
+.content {
+	padding: 100px 20px; /* tilføjer padding for at undgå overlap med den fixed menu */
+	text-align: center;
+}
