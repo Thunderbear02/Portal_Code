@@ -80,3 +80,48 @@ nav ul li a:hover {
 	padding: 100px 20px; /* tilføjer padding for at undgå overlap med den fixed menu */
 	text-align: center;
 }
+
+/* Dropdown styling */
+.dropdown {
+	position: relative; /*placere dropdown-menuen i forhold til dens forælder */
+}
+
+.dropdown-menu {
+	display: none; /*skjuler dropdown-menu som standard */
+	position: absolute; /* placer den i forhold til dens forældrer */
+	top: 100%; /*menu starter lige under hovedmenu*/
+	left: 0;
+	background-color: rgba(233,233,233, 0.9); /*Gennemsigtig baggrund */
+	border-radius: 5px; /*Chamfer*/
+	padding: 10px;
+	list-style: none; /*Fjern punktegn*/
+	margin: 0;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	z-index: 1000; /* viser dropdown overpå alt*/
+}
+
+.dropdown-menu li {
+	margin: 5px 0; /*mellemrum mellem elementer*/
+}
+
+.dropdown-menu li a {
+	text-decoration: none;
+	color:#000000;
+	font-weight: 600;
+	font-size: 30px;
+	padding: 5px 10px;
+	display: block;
+	transition: background-color 0.3 ease;
+	border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
+	background-color: #212121; /*fremhæv farve ved hover*/
+	color: white; /*hvid tekst ved hover*/
+}
+
+/* når musen holdes over dropdown-elementet*/
+.dropdown:hover .dropdown-menu {
+	display: block; /*vis dropdown-menuen*/
+}
+
