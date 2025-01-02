@@ -24,7 +24,7 @@ body {
 
 /* Menu bar styling */
 .menu-bar {
-	position: fixed; /* bliver i toppen */
+	position: relative; /* bliver i toppen */
 	top: 20px; /* Tilføjer space i toppen */
 	left: 15px; /* Tilføjer space fra venstre side */
 	right: 15px; /* Tilføjer space fra højre side */
@@ -125,3 +125,65 @@ nav ul li a:hover {
 	display: block; /*vis dropdown-menuen*/
 }
 
+/*Styling for intro tekst*/
+.intro-text {
+	margin-top: 100px;
+	margin-left: 50px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.intro-text h1 {
+	font-size: 100px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+/* Styling for button container*/ 
+.button-container {
+	margin-top: 20px;
+	display: flex;
+	margin-left: 70px;
+	gap: 30px;
+}
+
+/*styling for buttons*/
+.button {
+	text-decoration: none; /*Fjerner streg under tekst*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	background-color: rgba( 0, 0, 0, 0.75);
+	padding: 12px 20px;
+	border-radius: 8px;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/*hover effect for buttons */
+.button:hover {
+	background-color: black; /*kompålet sort ved hover*/
+	transform: scale(1.05); /*Gør knappen lidt større*/
+}
+
+/*styling for latest news section*/
+.latest-news-section {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.latest-news-title {
+	font-family: 'montserrat', sans-serif;
+	font-size: 35px;
+	color: white;
+	margin-bottom: 20px; /*afstand mellem billedet og teksten*/
+	margin-left: 60px;
+	margin-top: 200px
+}
+
+.latest-news-image {
+	width: 20%;
+	max-width: 1000px;
+	border-radius: 15px;
+	margin-left: 50px;
+}
