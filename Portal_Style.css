@@ -11,16 +11,17 @@
 
 
 body {
-	margin: 0;
-	padding: 0;
-	
 	/* Background image */
 	background-image: url("Portal_wall_background.jpg"); /* Bruger mit valgte billede */
 	background-size: cover; /* Fylder hele siden */
 	background-position: center; /* Billede i midten */
 	background-repeat: no-repeat; /* Billedet går ikke igen */
-	height: 100vh; /* Dækker den fulde viewport height */
+	height: 100%; /* Dækker den fulde viewport height */
+	
+	
 }
+
+
 
 /* Menu bar styling */
 .menu-bar {
@@ -186,4 +187,68 @@ nav ul li a:hover {
 	max-width: 1000px;
 	border-radius: 15px;
 	margin-left: 50px;
+	
+}
+
+@media (max-width: 600px) {
+	
+	.latest-news-image {
+	width: 80%;
+	}	
+	.intro-text h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+	nav ul li a {
+	font-size: 20px;
+}
+	nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex; /* viser items i en række */
+	gap: 25px; /* tilføjer space */
+	align-items: center; /*sikrer lodret centrering af listeelementer*/
+}
+}
+
+@media (min-width: 601px) {
+	
+	.latest-news-image {
+	width: 80%;
+	}
+	.intro-text h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+}
+
+@media (min-width: 768px) {
+	
+	.latest-news-image {
+	width: 70%;
+	}
+	.intro-text h1 {
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+}
+
+@media (min-width: 992px) {
+	
+	.latest-news-image {
+	width: 50%;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	
+	.latest-news-image {
+	width: 40%;
+	}
+	
 }
